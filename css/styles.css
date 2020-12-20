@@ -1,0 +1,352 @@
+/* HERO */
+.hero {
+  text-align: center;
+}
+
+.hero-container {
+  margin: 0 auto;
+  padding: 200px 15px;
+  min-width: 1200px;
+  max-width: 1600px;
+
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--primery-light-color);
+}
+
+/* ADVANTAGES */
+.advantages {
+  padding-top: 94px;
+}
+
+.advantages-list {
+  display: flex;
+}
+.advantages-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages-item:not(:first-child) {
+  margin-left: var(--list-item-gap);
+}
+
+.advantages-thumb {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+
+  color: var(--titels-color);
+}
+
+/* ABOUT */
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.about-item:not(:first-child) {
+  margin-left: var(--list-item-gap);
+}
+
+.about-title {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primery-light-color);
+  background-color: var(--about-title-bgc);
+}
+
+/* TEAM */
+
+.team {
+  font-size: 16px;
+  line-height: 1.187;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.team-cards-list {
+  display: flex;
+}
+
+.team-card {
+  flex-basis: calc((100% - 90px) / 4);
+
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primery-light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-card:not(:first-child) {
+  margin-left: var(--list-item-gap);
+}
+
+.team-text-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.team-titler {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: inherit;
+  color: var(--titels-color);
+}
+
+.team-position {
+  margin-bottom: 16px;
+}
+
+.team-social-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px;
+}
+
+.social-links-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primery-icons-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+}
+
+.social-links-button-icon {
+  fill: currentColor;
+}
+
+.social-links-button:hover,
+.social-links-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primery-light-color);
+}
+
+/* CLIENTS */
+
+.clients-list {
+  display: flex;
+  height: 90px;
+}
+
+.clients-item {
+  flex-basis: calc((100% -150px) / 6);
+}
+
+.clients-item:not(:first-child) {
+  margin-left: var(--list-item-gap);
+}
+
+.clients-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  color: var(--primery-icons-color);
+  border: 1px solid var(--primery-icons-color);
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+}
+
+.clients-button:hover,
+.clients-button:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-button-icon {
+  fill: currentColor;
+}
+
+/* PORTFOLIO */
+
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-filter-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.portfolio-filter-btn {
+  border-style: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+
+  color: var(--titels-color);
+  background-color: var(--secondary-bg-color);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+}
+
+.portfolio-filter-btn.current {
+  pointer-events: none;
+}
+
+.portfolio-filter-btn.current,
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  color: var(--primery-light-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-filter-btn:not(.current):hover {
+  cursor: pointer;
+}
+
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--list-item-gap));
+  margin-left: calc(-1 * var(--list-item-gap));
+}
+
+.portfolio-card {
+  flex-basis: calc(100% / 3 - var(--list-item-gap));
+  margin-left: var(--list-item-gap);
+  margin-top: var(--list-item-gap);
+}
+
+.portfolio-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-discription {
+  position: absolute;
+  padding: 63px 24px;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+
+  background-color: var(--accent-color);
+  color: var(--primery-light-color);
+
+  opacity: 0.9;
+
+  transition: transform 250ms var(--cubic);
+}
+
+.portfolio-link:hover .portfolio-discription,
+.portfolio-link:focus .portfolio-discription {
+  transform: translateY(-100%);
+}
+
+.portfolio-text-container {
+  flex-grow: 1;
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--titels-color);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.875;
+
+  color: var(--primery-text-color);
+}
